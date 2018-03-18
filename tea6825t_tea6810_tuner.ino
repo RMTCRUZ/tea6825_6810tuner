@@ -78,10 +78,10 @@ boolean MODE;
 #define AM_FM 1
 #define DIVIDER_AM_MIXER 0
 #define IF_COUNT_MEASURE_TIME 0
-#define SDR 0
+#define SDR 1
 #define IF_PRESCALER_DIV_RATE 0
-#define SENSITIVITY 0
-#define TEMP_COMPENSATION 0
+#define SENSITIVITY 1
+#define TEMP_COMPENSATION 1
 #define NOISE_BLANKER 0
 //End
 
@@ -152,7 +152,6 @@ void MAKETEA6810TBYTE3() {
   else {
     bitClear(TEA6810b3, 0);
   }
-  return;
 }      
 
 
@@ -205,7 +204,6 @@ void MAKETEA6825TBYTE1() { // CONSTRUCT TEA6825 BYTE1
   else {
     bitClear(TEA6825Tb1, 7);
   }
-  return;
 }                                  // END OF TEA6825 BYTE 1 CONSTRUCTION
 
 void MAKETEA6825TBYTE2() {        // CONSTRUCT TEA6825 BYTE 2
@@ -257,7 +255,6 @@ void MAKETEA6825TBYTE2() {        // CONSTRUCT TEA6825 BYTE 2
   else {
     bitClear(TEA6825Tb2, 7);
   }
-  return;
 } // END of TEA6825T BYTE 2 CONSTRUCTION
 
 void setup()

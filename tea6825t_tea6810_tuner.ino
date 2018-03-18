@@ -11,9 +11,8 @@ byte TEA6825Tb2;
 // END OF TEA6825 VARS
 
 //Program VARS
-int minfmfreq = 881;
-int maxfmfreq = 1088;
-char tunefreqchar[4];
+int minfmfreq = 871;
+int maxfmfreq = 1090;
 int freqnum1;
 int freqnum2;
 int freqnum3;
@@ -270,7 +269,7 @@ void senddata() {
   MAKETEA6825TBYTE1();
   MAKETEA6825TBYTE2();
   MAKETEA6810TBYTE3();
-calculatefrequency();
+  calculatefrequency();
   Wire.beginTransmission(TEA6825ADDRESS); // i2c start tea6825
   Wire.write(TEA6825Tb1); // send tea6825 byte1
   Wire.write(TEA6825Tb2); // send tea6825 byte2
@@ -322,7 +321,7 @@ Serial.print(freqnum1);
 Serial.print(freqnum2);
 Serial.print(freqnum3);
 Serial.print(".");
-Serial.println(freqnum4);
+Serial.print(freqnum4);
 Serial.println("MHz");
 }
 lasttunefreq = tunefreq;}

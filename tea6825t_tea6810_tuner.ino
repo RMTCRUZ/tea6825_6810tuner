@@ -306,7 +306,6 @@ freqnum3 = tunefreq / 10 % 10;
 freqnum2 = tunefreq / 100 % 10;
 freqnum1 = tunefreq / 1000 % 10;
 if (tunefreq < 1000) {
-//Serial.print(freqnum1);
 Serial.print(freqnum2);
 Serial.print(freqnum3);
 Serial.print(".");

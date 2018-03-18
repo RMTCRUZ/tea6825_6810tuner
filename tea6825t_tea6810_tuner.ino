@@ -1,6 +1,6 @@
 // Code to control TEA6825T base tuners with 6810 or 6811 PLL
 // Created by Ricardo Cruz 18/03/2018
-// I'm not responsible for any damaged cause by this code.
+// I'm not responsible for any damaged caused by this code.
 
 #include <Wire.h>
 
